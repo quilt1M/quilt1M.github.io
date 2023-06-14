@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c463d890f.js" crossorigin="anonymous"></script>
+
+    <title>QUILT-1M</title>
+    <link rel="icon" type="image/x-icon" href="img/quilt1m.png">
+
+    <style>
+        .quilt{
+        
+        font-variant: small-caps;
+        font-family: 'Latin Modern Roman', serif;
+    
+        }
+        .div1{
+            background-color:#E2E0E4;
+            border-radius: 15px;
+        }
+
+        .divtext1{
+            font-size: 40px;
+        }
+
+        .font1{
+            font-family: 'Tenor Sans', sans-serif;
+        }
+
+        .font2{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navsize1{
+            font-size: 25px;
+        }
+        .navsize{
+            font-size: 18px;;
+        }
+        .absfont{
+            font-size: 17px;;
+        }
+
+        .navcolor{
+            background-color: #392541;
+        }
+
+        .navfontc{
+            color: white;
+        }
+
+        .margin-left{
+            margin-left: 40px;
+        }
+
+        .size2{
+            font-size: 23px;
+        }
+
+        .datalink{
+            background-color:#E2E0E4;
+            border-radius: 10px;
+
+        }
+
+        .margin{
+            margin-left: 10px;
+            font-size: 15px;
+        }
+
+    </style>
+  </head>
+  <body>
+<nav class="navbar navbar-inverse navcolor">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand font1 navsize1" href="#"><span class="quilt">Quilt-1M</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navsize">
+        <li><a href="#">Paper</a></li>
+        <li><a href="#dataset">Dataset</a></li>
+        <li><a href="#result">Results</a></li>
+        <li><a href="#">Authors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container div1" align="center">
+    <h1 class="divtext1 font1"><b><span class="quilt"><span class="quilt"><span class="quilt">Quilt-1M</span></span></span>: One Million Image-Text Pairs for Histopathology (NeurIPS 2023) </b></h1> <br>
+    <h3 class="font2">Wisdom Oluchi Ikezogwo <sup><img src="img/quilt1m.png" height="20px" alt=""></sup>, Mehmet Saygin Seyfioglu <sup><img src="img/quilt1m.png" height="20px" alt=""></sup>, Fatemeh Ghezloo <sup><img src="img/quilt1m.png" height="20px" alt=""></sup>, Dylan Geva, Fatwir Sheikh Mohammed, Pavan Kumar Anand, Ranjay Krishna, Linda Shapiro</h3> <br>
+    <h4 class="font2 size2">University of Washington</h4>
+    <h4 class="font2"><img src="img/quilt1m.png" height="20px" alt="">- Equal Contribution</h5> <br>
+    <a class="btn btn-primary navsize margin-left" href="#" role="button">Paper >></a> 
+    <a class="btn btn-info navsize margin-left" href="https://github.com/wisdomikezogwo/quilt1m" role="button">Code >></a>
+    <a class="btn btn-success navsize margin-left" href="https://github.com/wisdomikezogwo/quilt1m" role="button">Data >></a>
+    <br><br>
+</div>
+<br><br>
+<div class="container">
+    <h1>Abstract</h1> <br>
+    <p class="absfont">Recent accelerations in multi-modal applications have been made possible with the plethora of image and text data available online. However, the scarcity of similar data in the medical field, specifically in histopathology, has halted similar progress. To enable similar representation learning for histopathology, we turn to YouTube, an untapped resource of videos, offering 
+        k hours of valuable educational histopathology videos from expert clinicians. From YouTube, we curate <span class="quilt">Quilt</span>: a large-scale vision-language dataset consisting of 
+         image and text pairs. Quilt was automatically curated using a mixture of models, including large language models), handcrafted algorithms, human knowledge databases, and automatic speech recognition. In comparison, the most comprehensive datasets curated for histopathology amass only around 
+        k samples. We combine Quilt with datasets, from other sources, including Twitter, research papers, and the internet in general, to create an even larger dataset: <span class="quilt">Quilt-1M</span>, with 
+        M paired image-text samples, marking it as the largest vision-language histopathology dataset to date. We demonstrate the value of <span class="quilt">Quilt-1M</span> by fine-tuning a pre-trained CLIP model. Our model outperforms state-of-the-art models on both zero-shot and linear probing tasks for classifying new pathology images across 
+         diverse patch-level datasets of 
+         different sub-pathologies and cross-modal retrieval tasks.</p>
+</div>
+<br><br>
+<div class="container">
+    <h1>Model and Objectives</h1> <br> <br> <br>
+    <div class="text-center">
+        <img src="img/main4.jpg" width="800px" alt="...">
+      </div> <br><br> <br>
+    <p class="absfont">To address the need for a large-scale vision-language dataset in histopathology, we introduce \dataset: containing $419,780$ images aligned with $768,826$ text pairs.
+        We draw on the insight that publicly available educational YouTube histopathology content represents an untapped potential.
+        We curate \dataset\ using $1,087$ hours of valuable educational histopathology videos from expert pathologists on YouTube. To extract aligned image and text pairs from the videos, we utilize a mixture of models: large language models, handcrafted algorithms, human knowledge databases, and automatic speech recognition. 
+        \dataset\ does not overlap with any current open-access histopathology data sources. This allows us to merge our dataset with other open-source datasets available. Therefore, to create an even larger and more diverse dataset, we combine \dataset\ with data from other sources, such as Twitter, research papers, and the Internet, resulting in \datasetcombo. The larger \datasetcombo\ contains one million image-text pairs, making it the largest public vision-language histopathology dataset to date.</p>
+</div>
+<br><br>
+<div class="container" id="dataset">
+    <h1>Dataset</h1> <br>
+    <p class="absfont">We collected <span class="quilt">Quilt</span>, from 4504 narrative videos spanning over 1087 hours with over 438K unique images with 768K associated text pairs. 
+        pixels collected over 178.7K time chunks with an average duration of 23.2 seconds. 
+        The mean length of the text captions is 22.76 words, and 8.68 words for ROI text, with an average of 1.74 medical sentences per image (max=5.33, min=1.0). 
+        Our dataset spans a total of 1.469M UMLS entities from those mentioned in the text (with 28.5K unique). The images span varying microscopic magnification scales (0-10x, 10-20x, 20-40x), obtaining (280K, 75K, 107K) images from each scale respectively.</p>
+    <div class="datalink"><a href="" class="margin">Include the dataset link here</a></div> <br> <br>
+    <div class="text-center">
+        <img src="img/data_ex_1.jpg" width="900px" alt="...">
+      </div> <br><br> 
+
+      <p class="absfont"> Following figures illustrate the distribution of data across 18 sub-pathology types, offering a comprehensive analysis of the dataset's text distribution. </p>
+      <br><br>
+      <div class="text-center">
+        <img src="img/stats.jpg" width="900px" alt="...">
+      </div> <br><br>
+
+
+</div>
+<br><br>
+<div class="container" id="result">
+    <h1>Results</h1> <br>
+    <p class="absfont"> We use the Contrastive Language-Image Pre-training (CLIP) objective [ 49 ] to pretrain <span class="quilt">QuiltNet</span>
+        using <span class="quilt">Quilt-1M</span>. <span class="quilt"> QuiltNet</span>, outperforms out-of-domain CLIP baseline and state-of-the-art histopathology
+        models across 12 zero-shot tasks, covering 8 different sub-pathologies (accuracy percentage provided). <br> <br>
+        <span class="quilt">QuiltNet</span>, outperforms out-of-domain CLIP baseline and state-of-the-art histopathology
+        models across 12 zero-shot tasks, covering 8 different sub-pathologies</p>
+
+    <br><br>
+    <div class="text-center">
+        <img src="img/barchart_zeroshot.jpg" width="900px" alt="...">
+      </div> <br><br> 
+</div>
+<br><br>
+
+<div class="container" id="contact">
+    <h1>Contact</h1> <br>
+    <p class="absfont">Any questions about Quilt, or want to get in touch? Contact Wisdom at wisdomik at cs.washington.edu.</p> <br>
+</div>
+
+<div class="row align-items-center" >
+    <center>    
+    <div class="col thumb d-flex align-items-center">
+        <img class="img-fluid" src="img/img3.png" width="430px" alt="">
+    </div>
+    </center>
+
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
