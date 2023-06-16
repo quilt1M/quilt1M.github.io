@@ -80,298 +80,303 @@
         }
 
         .card {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
 
-.card {
-  margin-top: 10px;
-  box-sizing: border-box;
-  border-radius: 2px;
-  background-clip: padding-box;
-  min-height:200px;
-}
+        .card {
+          margin-top: 10px;
+          box-sizing: border-box;
+          border-radius: 2px;
+          background-clip: padding-box;
+          min-height:200px;
+        }
 
-.card span.card-title {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
+        .card span.card-title {
+          color: #fff;
+          font-size: 24px;
+          font-weight: 300;
+          text-transform: uppercase;
+        }
 
-.card .card-image {
-  position: relative;
-  overflow: hidden;
-}
+        .card .card-image {
+          position: relative;
+          overflow: hidden;
+        }
 
-.card .card-image img {
-  border-radius: 2px 2px 0 0;
-  background-clip: padding-box;
-  position: relative;
-  z-index: -1;
-}
+        .card .card-image img {
+          border-radius: 2px 2px 0 0;
+          background-clip: padding-box;
+          position: relative;
+          z-index: -1;
+        }
 
-.card .card-image span.card-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 16px;
-}
+        .card .card-image span.card-title {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 16px;
+        }
 
-.card .card-content {
-  padding: 10px;
-  border-radius: 0 0 2px 2px;
-  background-clip: padding-box;
-  box-sizing: border-box;
-}
+        .card .card-content {
+          padding: 10px;
+          border-radius: 0 0 2px 2px;
+          background-clip: padding-box;
+          box-sizing: border-box;
+        }
 
-.card .card-content p {
-  margin: 0;
-  color: inherit;
-}
+        .card .card-content p {
+          margin: 0;
+          color: inherit;
+        }
 
-.card .card-content span.card-title {
-  line-height: 48px;
-}
+        .card .card-content span.card-title {
+          line-height: 48px;
+        }
 
-.card .card-action {
-  border-top: 1px solid rgba(160, 160, 160, 0.2);
-  padding: 16px;
-}
+        .card .card-action {
+          border-top: 1px solid rgba(160, 160, 160, 0.2);
+          padding: 16px;
+        }
 
-.card .card-action a {
-  color: #ffab40;
-  margin-right: 16px;
-  transition: color 0.3s ease;
-  text-transform: uppercase;
-}
+        .card .card-action a {
+          color: #ffab40;
+          margin-right: 16px;
+          transition: color 0.3s ease;
+          text-transform: uppercase;
+        }
 
-.card .card-action a:hover {
-  color: #ffd8a6;
-  text-decoration: none;
-}
-
+        .card .card-action a:hover {
+          color: #ffd8a6;
+          text-decoration: none;
+        }
     </style>
   </head>
   <body>
-<nav class="navbar navbar-inverse navcolor">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand font1 navsize1" href="#"><span class="quilt">Quilt-1M</span></a>
+  <nav class="navbar navbar-inverse navcolor">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand font1 navsize1" href="#"><span class="quilt">Quilt-1M</span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navsize">
+          <li><a href="#">Paper</a></li>
+          <li><a href="#dataset">Dataset</a></li>
+          <li><a href="#result">Results</a></li>
+          <li><a href="#author">Authors</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navsize">
-        <li><a href="#">Paper</a></li>
-        <li><a href="#dataset">Dataset</a></li>
-        <li><a href="#result">Results</a></li>
-        <li><a href="#author">Authors</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  
-<div class="container div1" align="center">
-    <h1 class="divtext1 font1"><b><span class="quilt"><span class="quilt"><span class="quilt">Quilt-1M</span></span></span>: One Million Image-Text Pairs for Histopathology (NeurIPS 2023) </b></h1> <br>
-    <h3 class="font2">Wisdom Oluchi Ikezogwo <sup><img src="img/quilt1m.png" height="20px" alt=""></sup>, Mehmet Saygin Seyfioglu <sup><img src="img/quilt1m.png" height="20px" alt=""></sup>, Fatemeh Ghezloo <sup><img src="img/quilt1m.png" height="20px" alt=""></sup>, Dylan Geva, Fatwir Sheikh Mohammed, Pavan Kumar Anand, Ranjay Krishna, Linda Shapiro</h3> <br>
-    <h4 class="font2 size2">University of Washington</h4>
-    <h4 class="font2"><img src="img/quilt1m.png" height="20px" alt="">- Equal Contribution</h5> <br>
-    <a class="btn btn-primary navsize margin-left" href="#" role="button">Paper >></a> 
-    <a class="btn btn-info navsize margin-left" href="https://github.com/wisdomikezogwo/quilt1m" role="button">Code >></a>
-    <a class="btn btn-success navsize margin-left" href="https://github.com/wisdomikezogwo/quilt1m" role="button">Data >></a>
-    <br><br>
-</div>
-<br><br>
-<div class="container">
-    <h1>Abstract</h1> <br>
-    <p class="absfont">Recent accelerations in multi-modal applications have been made possible with the plethora of image and text data available online. However, the scarcity of similar data in the medical field, specifically in histopathology, has halted similar progress. To enable similar representation learning for histopathology, we turn to YouTube, an untapped resource of videos, offering 
-        k hours of valuable educational histopathology videos from expert clinicians. From YouTube, we curate <span class="quilt">Quilt</span>: a large-scale vision-language dataset consisting of 
-         image and text pairs. Quilt was automatically curated using a mixture of models, including large language models), handcrafted algorithms, human knowledge databases, and automatic speech recognition. In comparison, the most comprehensive datasets curated for histopathology amass only around 
-        k samples. We combine Quilt with datasets, from other sources, including Twitter, research papers, and the internet in general, to create an even larger dataset: <span class="quilt">Quilt-1M</span>, with 
-        M paired image-text samples, marking it as the largest vision-language histopathology dataset to date. We demonstrate the value of <span class="quilt">Quilt-1M</span> by fine-tuning a pre-trained CLIP model. Our model outperforms state-of-the-art models on both zero-shot and linear probing tasks for classifying new pathology images across 
-         diverse patch-level datasets of 
-         different sub-pathologies and cross-modal retrieval tasks.</p>
-</div>
-<br><br>
-<div class="container">
-    <h1>Model and Objectives</h1> <br> <br> <br>
-    <div class="text-center">
-        <img class="img-fluid" src="img/main4.jpg" style="max-width: 70%;" alt="...">
-      </div> <br><br> <br>
-    <p class="absfont">To address the need for a large-scale vision-language dataset in histopathology, we introduce <span class="quilt">Quilt</span>: containing 419,780 images aligned with 768,826 text pairs.
-        We draw on the insight that publicly available educational YouTube histopathology content represents an untapped potential.
-        We curate <span class="quilt">Quilt</span> using 1,087 hours of valuable educational histopathology videos from expert pathologists on YouTube. To extract aligned image and text pairs from the videos, we utilize a mixture of models: large language models, handcrafted algorithms, human knowledge databases, and automatic speech recognition. 
-        <span class="quilt">Quilt</span> does not overlap with any current open-access histopathology data sources. This allows us to merge our dataset with other open-source datasets available. Therefore, to create an even larger and more diverse dataset, we combine <span class="quilt">Quilt</span> with data from other sources, such as Twitter, research papers, and the Internet, resulting in <span class="quilt">Quilt-1M</span>. The larger <span class="quilt">Quilt-1M</span> contains one million image-text pairs, making it the largest public vision-language histopathology dataset to date.</p>
-</div>
-<br><br>
-<div class="container" id="dataset">
-    <h1>Dataset</h1> <br>
-    <p class="absfont">We collected <span class="quilt">Quilt</span>, from 4504 narrative videos spanning over 1087 hours with over 438K unique images with 768K associated text pairs.  
-        The mean length of the text captions is 22.76 words, and 8.68 words for ROI text, with an average of 1.74 medical sentences per image (max=5.33, min=1.0). 
-        Our dataset spans a total of 1.469M UMLS entities from those mentioned in the text (with 28.5K unique). The images span varying microscopic magnification scales (0-10x, 10-20x, 20-40x), obtaining (280K, 75K, 107K) images from each scale respectively.
-    <br><br>
-    The link of one of the narrative videos has been given below. </p>
-    <br>
-    <div class="datalink"><a href="https://www.youtube.com/watch?v=Hc3gGj8cvuc&ab_channel=FrugalCreator" class="margin">Go to the YouTube video</a></div> <br>
-    <br>
-    <p class="absfont">  Following are the collection of sample images from our dataset, accompanied by corresponding medical
-        text, ROI text, and the top three sub-pathology classifications:  <br> <br></p>
-   
-
-    <div class="text-center">
-        <img class="img-fluid" src="img/data_ex_1.jpg" style="max-width: 80%" alt="...">
-      </div> <br><br> 
-
-   
-
-      <p class="absfont"> Following figures illustrate the distribution of data across 18 sub-pathology types, offering a comprehensive analysis of the dataset's text distribution. </p>
+  </nav>
+  <div class="container div1" align="center">
+      <h1 class="divtext1 font1"><b><span class="quilt"><span class="quilt"><span class="quilt">Quilt-1M</span></span></span>: One Million Image-Text Pairs for Histopathology (NeurIPS 2023) </b></h1> <br>
+      <h3 class="font2">Wisdom Oluchi Ikezogwo <sup><img src="img/quilt1m.png" height="20px" alt=""></sup>, Mehmet Saygin Seyfioglu <sup><img src="img/quilt1m.png" height="20px" alt=""></sup>, Fatemeh Ghezloo <sup><img src="img/quilt1m.png" height="20px" alt=""></sup>, Dylan Geva, Fatwir Sheikh Mohammed, Pavan Kumar Anand, Ranjay Krishna, Linda Shapiro</h3> <br>
+      <h4 class="font2 size2">University of Washington</h4>
+      <h4 class="font2"><img src="img/quilt1m.png" height="20px" alt="">- Equal Contribution</h5> <br>
+      <a class="btn btn-primary navsize margin-left" href="#" role="button">Paper >></a> 
+      <a class="btn btn-info navsize margin-left" href="https://github.com/wisdomikezogwo/quilt1m" role="button">Code >></a>
+      <a class="btn btn-success navsize margin-left" href="https://github.com/wisdomikezogwo/quilt1m" role="button">Data >></a>
       <br><br>
+  </div>
+  <br><br>
+  <div class="container">
+      <h1>Abstract</h1> <br>
+      <p class="absfont">Recent accelerations in multi-modal applications have been made possible with the plethora of image and text data available online. However, the scarcity of similar data in the medical field, specifically in histopathology, has halted similar progress. To enable similar representation learning for histopathology, we turn to YouTube, an untapped resource of videos, offering 
+          k hours of valuable educational histopathology videos from expert clinicians. From YouTube, we curate <span class="quilt">Quilt</span>: a large-scale vision-language dataset consisting of 
+          image and text pairs. Quilt was automatically curated using a mixture of models, including large language models), handcrafted algorithms, human knowledge databases, and automatic speech recognition. In comparison, the most comprehensive datasets curated for histopathology amass only around 
+          k samples. We combine Quilt with datasets, from other sources, including Twitter, research papers, and the internet in general, to create an even larger dataset: <span class="quilt">Quilt-1M</span>, with 
+          M paired image-text samples, marking it as the largest vision-language histopathology dataset to date. We demonstrate the value of <span class="quilt">Quilt-1M</span> by fine-tuning a pre-trained CLIP model. Our model outperforms state-of-the-art models on both zero-shot and linear probing tasks for classifying new pathology images across 
+          diverse patch-level datasets of 
+          different sub-pathologies and cross-modal retrieval tasks.</p>
+  </div>
+  <br><br>
+  <div class="container">
+      <h1>Model and Objectives</h1> <br> <br> <br>
       <div class="text-center">
-        <img class="img-fluid" src="img/stats.jpg" style="max-width: 80%" alt="...">
-      </div> <br><br>
+          <img class="img-fluid" src="img/main4.jpg" style="max-width: 70%;" alt="...">
+        </div> <br><br> <br>
+      <p class="absfont">To address the need for a large-scale vision-language dataset in histopathology, we introduce <span class="quilt">Quilt</span>: containing 419,780 images aligned with 768,826 text pairs.
+          We draw on the insight that publicly available educational YouTube histopathology content represents an untapped potential.
+          We curate <span class="quilt">Quilt</span> using 1,087 hours of valuable educational histopathology videos from expert pathologists on YouTube. To extract aligned image and text pairs from the videos, we utilize a mixture of models: large language models, handcrafted algorithms, human knowledge databases, and automatic speech recognition. 
+          <span class="quilt">Quilt</span> does not overlap with any current open-access histopathology data sources. This allows us to merge our dataset with other open-source datasets available. Therefore, to create an even larger and more diverse dataset, we combine <span class="quilt">Quilt</span> with data from other sources, such as Twitter, research papers, and the Internet, resulting in <span class="quilt">Quilt-1M</span>. The larger <span class="quilt">Quilt-1M</span> contains one million image-text pairs, making it the largest public vision-language histopathology dataset to date.</p>
+  </div>
+  <br><br>
+  <div class="container" id="dataset">
+      <h1>Dataset</h1> <br>
+      <p class="absfont">We collected <span class="quilt">Quilt</span>, from 4504 narrative videos spanning over 1087 hours with over 438K unique images with 768K associated text pairs.  
+          The mean length of the text captions is 22.76 words, and 8.68 words for ROI text, with an average of 1.74 medical sentences per image (max=5.33, min=1.0). 
+          Our dataset spans a total of 1.469M UMLS entities from those mentioned in the text (with 28.5K unique). The images span varying microscopic magnification scales (0-10x, 10-20x, 20-40x), obtaining (280K, 75K, 107K) images from each scale respectively.
+      <br><br>
+      One of our narrative videos can be seen below. </p>
+      <br>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NklNJ2Z4wMM" allowfullscreen></iframe>
+      </div>
+      <br> <br>
+      <p class="absfont">  Following are the collection of sample images from our dataset, accompanied by corresponding medical
+          text, ROI text, and the top three sub-pathology classifications:  <br> <br></p>
+    
+
+      <div class="text-center">
+          <img class="img-fluid" src="img/data_ex_1.jpg" style="max-width: 80%" alt="...">
+        </div> <br><br> 
+
+    
+
+        <p class="absfont"> Following figures illustrate the distribution of data across 18 sub-pathology types, offering a comprehensive analysis of the dataset's text distribution. </p>
+        <br><br>
+        <div class="text-center">
+          <img class="img-fluid" src="img/stats.jpg" style="max-width: 80%" alt="...">
+        </div> <br><br>
 
 
-</div>
-<br><br>
-<div class="container" id="result">
-    <h1>Results</h1> <br>
-    <p class="absfont"> We use the Contrastive Language-Image Pre-training (CLIP) objective [ 49 ] to pretrain <span class="quilt">QuiltNet</span>
-        using <span class="quilt">Quilt-1M</span>. <span class="quilt"> QuiltNet</span>, outperforms out-of-domain CLIP baseline and state-of-the-art histopathology
-        models across 12 zero-shot tasks, covering 8 different sub-pathologies (accuracy percentage provided). <br> <br>
-        <span class="quilt">QuiltNet</span>, outperforms out-of-domain CLIP baseline and state-of-the-art histopathology
-        models across 12 zero-shot tasks, covering 8 different sub-pathologies</p>
+  </div>
+  <br><br>
+  <div class="container" id="result">
+      <h1>Results</h1> <br>
+      <p class="absfont"> We use the <a href="https://proceedings.mlr.press/v139/radford21a.html">Contrastive Language-Image Pre-training (CLIP) objective</a> to pretrain <span class="quilt">QuiltNet</span>
+          using <span class="quilt">Quilt-1M</span>. <span class="quilt"> QuiltNet</span>, outperforms out-of-domain CLIP baseline and state-of-the-art histopathology
+          models across 12 zero-shot tasks, covering 8 different sub-pathologies (accuracy percentage provided). <br> <br>
+      <div class="text-center">
+          <img class="img-fluid" src="img/barchart_zeroshot.jpg" style="max-width: 80%" alt="...">
+        </div> <br><br> 
 
-    <br><br>
-    <div class="text-center">
-        <img class="img-fluid" src="img/barchart_zeroshot.jpg" style="max-width: 80%" alt="...">
-      </div> <br><br> 
-</div>
-<br><br>
-<div class="container" id="author">
-    <h1>Authors</h1> <br> <br>
+      <p class="absfont"><b>Results using linear probing:</b> We assess the few-shot and full-shot performance of our model
+          by conducting linear probing with 1%, 10%, and 100% of the training data, sampled with three
+          different seeds. Remarkably, our model, utilizing the <a href="https://openreview.net/forum?id=YicbFdNTTy">ViT-B/32</a> architecture with <a href="https://www.semanticscholar.org/paper/Language-Models-are-Unsupervised-Multitask-Learners-Radford-Wu/9405cc0d6169988371b2755e573cc28650d14dfe">GPT/77</a>,
+          outperforms its counterparts, <a href="https://www.biorxiv.org/content/10.1101/2023.03.29.534834v1">PLIP</a>, <a href="https://arxiv.org/abs/2303.00915">BiomedCLIP</a>, and CLIP, in most datasets.</p> <br> <br>
 
-    <div class="container">
-        <div class="row">
-            <center>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="img/wisdom.jpeg">
-              </div>
-      
-              <div class="card-content">
-                <p>Wisdom O. Ikezogwo <img src="img/quilt1m.png" height="15px" alt=""></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="img/saygin.png">
-              </div>
-      
-              <div class="card-content">
-                <p>Mehmet S. Seyfioglu <img src="img/quilt1m.png" height="15px" alt=""></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="img/fatemeh.JPG">
-              </div>
-      
-              <div class="card-content">
-                <p>Fatemeh Ghezloo <img src="img/quilt1m.png" height="15px" alt=""></p>
+      <p class="absfont"><b>Results using cross-modal retrieval:</b>In our study, we evaluate cross-modal retrieval efficacy by
+        examining both zero-shot text-to-image and image-to-text retrieval capabilities. Our experiments are conducted
+        on two datasets: our holdout dataset from <span class="quilt">Quilt-1M</span> and the <span class="quilt">ARCH</span> dataset. In terms of cross-modal capabilities our <span class="quilt">QuiltNet</span> performs better in most of the cases compared to it's counterparts. </p> <br> 
+
+        
+
+  </div>
+  <br><br>
+  <div class="container" id="author">
+      <h1>Authors</h1> <br> <br>
+      <div class="container">
+          <div class="row">
+              <center>
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/wisdom.jpeg">
+                </div>
+        
+                <div class="card-content">
+                  <p>Wisdom O. Ikezogwo <img src="img/quilt1m.png" height="15px" alt=""></p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="img/dylan.jpeg">
-              </div> 
-      
-              <div class="card-content">
-                <p>Dylan Geva</p>
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/saygin.png">
+                </div>
+        
+                <div class="card-content">
+                  <p>Mehmet S. Seyfioglu <img src="img/quilt1m.png" height="15px" alt=""></p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="img/fatwir.jpeg">
-              </div>
-      
-              <div class="card-content">
-                <p>Fatwir S. Mohammed</p>
-              </div>
-            </div>
-          </div>
-                    <div class="col-sm-2">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="img/pavan.jpeg">
-              </div>
-      
-              <div class="card-content">
-                <p>Pavan K. Anand</p>
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/fatemeh.JPG">
+                </div>
+        
+                <div class="card-content">
+                  <p>Fatemeh Ghezloo <img src="img/quilt1m.png" height="15px" alt=""></p>
+                </div>
               </div>
             </div>
-          </div>
-          
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="img/ranjay.jpeg">
-              </div>
-      
-              <div class="card-content">
-                <p>Ranjay Krishna</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="card">
-              <div class="card-image">
-                <img class="img-responsive" src="img/linda.jpeg">
-              </div>
-      
-              <div class="card-content">
-                <p>Linda Shapiro</p>
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/dylan.jpeg">
+                </div> 
+        
+                <div class="card-content">
+                  <p>Dylan Geva</p>
+                </div>
               </div>
             </div>
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/fatwir.jpeg">
+                </div>
+        
+                <div class="card-content">
+                  <p>Fatwir S. Mohammed</p>
+                </div>
+              </div>
+            </div>
+                      <div class="col-sm-2">
+              <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/pavan.jpeg">
+                </div>
+        
+                <div class="card-content">
+                  <p>Pavan K. Anand</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/ranjay.jpeg">
+                </div>
+        
+                <div class="card-content">
+                  <p>Ranjay Krishna</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="card">
+                <div class="card-image">
+                  <img class="img-responsive" src="img/linda.jpeg">
+                </div>
+        
+                <div class="card-content">
+                  <p>Linda Shapiro</p>
+                </div>
+              </div>
+            </div>
+          </center>
           </div>
-        </center>
+        
         </div>
       
+        <br><br>
+        <center>
+        <h4 class="font2"><img src="img/quilt1m.png" height="20px" alt="">- Equal First Author Contribution</h4> <br></center>
+
+
+  </div>
+  <br><br>
+  <div class="container" id="contact">
+      <h1>Contact</h1> <br>
+      <p class="absfont">Any questions about <span class="quilt">Quilt</span>, or want to get in touch? Contact Wisdom at wisdomik at cs.washington.edu.</p> <br>
+  </div>
+  <div class="row align-items-center" >
+      <center>    
+      <div class="col thumb d-flex align-items-center">
+          <img class="img-fluid" src="img/img3.png" style="max-width: 30%;" alt="">
       </div>
-    
-      <br><br>
-      <center>
-      <h4 class="font2"><img src="img/quilt1m.png" height="20px" alt="">- Equal First Author Contribution</h4> <br></center>
-</div>
+      </center>
 
-    
-
-<br><br>
-<div class="container" id="contact">
-    <h1>Contact</h1> <br>
-    <p class="absfont">Any questions about Quilt, or want to get in touch? Contact Wisdom at wisdomik at cs.washington.edu.</p> <br>
-</div>
-
-<div class="row align-items-center" >
-    <center>    
-    <div class="col thumb d-flex align-items-center">
-        <img class="img-fluid" src="img/img3.png" style="max-width: 30%;" alt="">
-    </div>
-    </center>
-
-</div>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
